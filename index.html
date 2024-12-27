@@ -23,7 +23,7 @@
                     <div class="imagem"><img id="img-10" src="https://lh3.googleusercontent.com/pw/AP1GczNXklNexFs7qlgsh0BDusTgzvvJfyk02UkT0MqGg3HeNPyfOh8bjcZhFiAs3GduvfJNtyVw0p6_U2dyxC_NJSv9yps1EPKwf0BQisy7KVX0YxwwNm3n4s7TnJsw7oDyfRTnCIIvA5Z2AsQ4AF3dsd2j=w919-h919-s-no-gm?authuser=0"></div>
                     <div class="imagem"><img id="img-11" src="https://lh3.googleusercontent.com/pw/AP1GczPncemiQDwxxlVrmrKBHAOVkpnqV1KNciY_krryoFr9qsOwkdUiUQ-IrX6wCPNZAuig4eV6HVDb4u96_fEZqrELxAAuA5g2Lixmy0ZVDLS7od4xmidkw4ywKFyREyhbxM_Xq709JU1y4ph1dO98ZYV8=w919-h919-s-no-gm?authuser=0"></div>
                     <div class="imagem"><img id="img-12" src="https://lh3.googleusercontent.com/pw/AP1GczO4EwpSVP0NBLClA_gcANGFfKMO9MZ5WksECCtKnhsOP0vC4rYksz9ZuCfEuZBlhSxtCqV6o2pn8jTIVgOAytjPVq1K1wVp_iv2UbPSC6Q4CUBAsx0Mie-SzmkoQ2VszVAONIVPOlz0gTEN_CGidMr2=w919-h919-s-no-gm?authuser=0"></div>
-                    </div>
+            </div>
 
 </section>
 
@@ -35,6 +35,8 @@
     justify-content: center;
     background-color: #eae5d2;
     flex-direction: column;
+    position: relative;
+    padding: 50px 40px;
 }
 
 .confiraFotosEvento{
@@ -78,8 +80,8 @@ padding: 20px;
 }
 
 .imagem {
-width: 400px;
-height: 400px;
+width: 300px;
+height: 300px;
 flex-shrink: 0;
 overflow:visible;
 }
@@ -87,21 +89,51 @@ overflow:visible;
 .imagem img {
 width: 100%;
 height: 100%;
+border-radius: 20px;
 overflow: hidden; /* cortar as imagens que extrapolarem */
 object-fit: cover; /* ajusta a imagem para preencher todo o espaço */
 }
 
-::-webkit-scrollbar{
+.fotos-evento ::-webkit-scrollbar{
     height: 10px;
     width: 5px;
     background-color: #eae5d2;
 }
 
-::-webkit-scrollbar-thumb{
+.fotos-evento ::-webkit-scrollbar-thumb{
     height: 10px;
     width: 5px;
     border-radius: 50px;
     background-color: #001a2d;
 }
 
+
+@media(max-width:995px){
+    .confiraFotosEvento_Title h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 32px;
+    }
+}
+
+@media(max-width:560px){
+    .confiraFotosEvento_Title h2 {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:430px){
+    .imagem{
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media(max-width:360px){
+    .confiraFotosEvento_Title h2 {
+        font-size: 25px;
+    }
+}
 </style>
