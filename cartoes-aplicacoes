@@ -1,0 +1,128 @@
+<body>
+<div class="cards_title">
+    <h2> Conheça as
+        <span>aplicações</span>
+        apresentadas no nosso evento!
+    </h2>
+</div>
+
+<section class="cards">
+
+        <div class="icons">
+            <a href="https://niteroicontraqueimadas.niteroi.rj.gov.br/" class="card-link">
+                <div class="card-content">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczO0hpNmDyeEKUx2NJriZeEMuWB_FZDl0PHy2m4KFiWsFVyLTCCdtZ8i8LVggvUUdKnG01wXzAaco_Gzd0Cw_3v3px3cQl--LrikoK4N7ypbl--HBXFrX8AAnUAQ-3WNVxMJoYTqaCq9G0PL87QmwJim=w869-h869-s-no-gm?authuser=0" class="card-image">
+                </div>
+            </a>
+        </div>
+
+        <div class="icons">
+            <a href="https://arcg.is/iH8Wj" class="card-link">
+                <div class="card-content">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOHk1zo0qSD7MJDKo32rM1VpqRfqSwxO7E0Fy6w4F2IThW8tMNXJ7e6S6huG5rerNM61m6wmM04Iamf8ittiJUh5SVGaEKLsRywaeJnvx5RAuHrb6i8O5LaGjNp7dl_rrt24W9ZuxDE_93TO8J8rPxV=w869-h869-s-no-gm?authuser=0" class="card-image">
+                </div>
+            </a>
+        </div>
+
+        <div class="icons">
+            <a href="https://viabilidade.niteroi.rj.gov.br/" class="card-link">
+                <div class="card-content">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczOZUwjKnGebD4Iyt_q5PmWniSvpbojPJBUZ5okbQNORPlyIux4g_5exHfBplSRMfH3OMTHUUieAD6TDqP5scecJxhWaecnojUzfdZdJU3U50fiCrgKCJ5CfvMg4np1B2JiEuU17hp3Pk_AwjDA-TnrQ=w869-h869-s-no-gm?authuser=0" class="card-image">
+                </div>
+            </a>
+        </div>
+
+        <div class="icons">
+            <a href="https://geoniteroi.maps.arcgis.com/apps/instant/lookup/index.html?appid=6b957c6c478f47a9a53e2471cf23e4d6" class="card-link">
+                <div class="card-content">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNsRta2UVm_HCxtIbI7Ht2ZazM-dnJjOsWaIA_eFVHZrU9Eg7JXr2co9wb6r2fEwHXRC_p_9XrZGLhpMr1yhIe0FGxav2OjNMxrxrNugxG37GRQGp1VbiBnGoB_NlYBvcTwa-c95I_2zBpPcwFA_Mv8=w869-h869-s-no-gm?authuser=0" class="card-image">
+                </div>
+            </a>
+        </div>
+
+        <div class="icons">
+            <a href="" class="card-link">
+                <div class="card-content">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNyf8R7JCQsGkbyI-0DhYrxL00NLt_b5SLR-dgCSdHVHK6XsuNjzHEa7JAIb_-uvyyWMijCrm_6FF59IzP4amjeTAcZyjs43d4lvO7tuf9glmthyEcOfJkChkt99GpAuPjEA-qqTEylzKLvGSrpIFu-=w869-h869-s-no-gm?authuser=0" class="card-image">
+                </div>
+            </a>
+        </div>
+        <div class="icons">
+            <a href="https://sig.niteroi.rj.gov.br/portal/apps/experiencebuilder/experience/?id=c0169537ff56487a8d99fb64dec3dde8" class="card-link">
+                <div class="card-content">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPgU-noQr951WbUg5shFxySK8e2gAgxeCKBWzGbAarxAMnYxMhG4UgN1n2mhdAPqamfk1kBNxmdze19qC-dRm_sYahG89r4jxslpkMj3xNuBIVkmQELkOlgZgy644Xl8TB5NMtFNd194QUKXBl9hWw_=w869-h869-s-no-gm?authuser=0" class="card-image">
+                </div>
+            </a>
+        </div>
+            
+    </section>
+</body>
+
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    padding: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons:hover {
+    transform: scale(1.05);
+}
+
+/* Link dentro do card */
+.card-link {
+    display: block;
+    height: 100%;
+    text-decoration: none; /* remove o sublinhado */
+}
+
+.card-image {
+    border-radius: 8px;
+    gap: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.cards_title h2{
+    color: #001a2d;
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.cards_title h2 span {
+    font-weight: 600;
+    position: relative;
+}
+
+.cards_title h2 span::after {
+    content: '';
+    position: absolute;
+    background-color: #B8591F;
+    width: 100%;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+</style>
